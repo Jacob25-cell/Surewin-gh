@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}VIP Tips - SureWin GH{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="text-center py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="d-flex align-items-center justify-content-center mb-3">
+                    <i class="fas fa-crown fa-2x text-warning me-3"></i>
+                    <h1 class="display-5 fw-bold text-success mb-0">VIP Predictions</h1>
+                </div>
+                <p class="lead text-muted">Premium tips with 85%+ success rate</p>
+                <div class="alert alert-success" role="alert">
+                    <i class="fas fa-check-circle me-2"></i>
+                    Welcome to VIP! Contact us for daily password.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="predictions-section">
+                <h2 class="text-center mb-5">
+                    <i class="fas fa-star me-2"></i>Today's VIP Predictions
+                </h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-warning">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="card-title text-success mb-0">Champions League</h5>
+                                    <span class="badge bg-warning text-dark">VIP</span>
+                                </div>
+                                <p class="card-text">
+                                    <strong>Man City vs PSG</strong><br>
+                                    Time: 20:00<br>
+                                    Prediction: Over 3.5 Goals<br>
+                                    Odds: 2.30<br>
+                                    Confidence: ⭐⭐⭐⭐⭐
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-warning">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="card-title text-success mb-0">Europa League</h5>
+                                    <span class="badge bg-warning text-dark">VIP</span>
+                                </div>
+                                <p class="card-text">
+                                    <strong>Liverpool vs AC Milan</strong><br>
+                                    Time: 18:00<br>
+                                    Prediction: Home Win & BTTS<br>
+                                    Odds: 3.20<br>
+                                    Confidence: ⭐⭐⭐⭐
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-warning">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="card-title text-success mb-0">Premier League</h5>
+                                    <span class="badge bg-warning text-dark">VIP</span>
+                                </div>
+                                <p class="card-text">
+                                    <strong>Tottenham vs Newcastle</strong><br>
+                                    Time: 16:30<br>
+                                    Prediction: Double Chance 1X<br>
+                                    Odds: 1.55<br>
+                                    Confidence: ⭐⭐⭐⭐⭐
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="card border-success">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-chart-line text-success me-2"></i>VIP Statistics
+                                </h5>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <div class="stat-item">
+                                            <div class="h3 text-success">87%</div>
+                                            <div class="small">Success Rate</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="stat-item">
+                                            <div class="h3 text-success">15</div>
+                                            <div class="small">Daily Tips</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="stat-item">
+                                            <div class="h3 text-success">2.1x</div>
+                                            <div class="small">Avg Odds</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-warning">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-clock text-warning me-2"></i>Get Access
+                                </h5>
+                                <p class="card-text">Contact us on WhatsApp to get your daily VIP password and join our winning community!</p>
+                                <div class="d-flex gap-2">
+                                    <a href="https://wa.me/233505301716?text=Hi%2C%20I%20want%20VIP%20access%20to%20SureWin%20GH" 
+                                       class="btn btn-success btn-sm" target="_blank">
+                                        <i class="fab fa-whatsapp me-1"></i>Get VIP Access
+                                    </a>
+                                    <a href="{{ url_for('howtopay') }}" class="btn btn-outline-success btn-sm">
+                                        <i class="fas fa-credit-card me-1"></i>How to Pay
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
